@@ -112,6 +112,13 @@ body, html {
     background-color: #a6bd6f55;
 }
 
+.oldsite-wrapper {
+    width: 100vw;
+    text-align: center;
+    padding: 1em;
+    font-size: large;
+}
+
 @media (max-width: 1024px) {
     .catalog-container {
       grid-template-columns: repeat(2, 1fr);
