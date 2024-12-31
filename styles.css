@@ -1,0 +1,57 @@
+:root {
+    --main-bg: #1e1e1e;
+    --alt-bg: #0b0b0b;
+    --alt-green: #a6bd6f;
+    --alt-purple: #6c46cc;
+    --alt-red: #9c6270;
+}
+
+body, html {
+    background-color: var(--main-bg);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+.footer-wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: small;
+    background-color: var(--alt-bg);
+    font-family: "proxima-nova", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.footer-container {
+    padding: 1em;
+}
+
+.footer-txt--emphasis {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+
+.footer-link {
+    color: #fff;
+    transition: 250ms all;
+}
+
+.footer-link:hover {
+    color: #dbdbdb;
+}
+
+.footer-img--physicsim {
+    width: 100px;
+    margin: 0 1em 0 1em;
+}
+
+.footer-img--ib-logo {
+    width: 50px;
+    border-radius: 50%;
+    margin: 0 1em 0 1em;
+}
