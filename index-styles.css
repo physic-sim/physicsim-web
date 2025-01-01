@@ -115,7 +115,7 @@ body, html {
 .oldsite-wrapper {
     width: 100vw;
     text-align: center;
-    padding: 1em;
+    padding-bottom: 2em;
     font-size: large;
 }
 
