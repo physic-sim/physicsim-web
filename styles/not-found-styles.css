@@ -6,8 +6,8 @@
     margin-top: 1em;
 }
 
-.not-found-nav-logo {
-    height: 75px;
+.nav-wrapper {
+    position: absolute;
 }
 
 .not-found-wrapper {
@@ -16,6 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--alt-red);
 }
 
 .not-found-container {
@@ -46,4 +47,8 @@
     font-size: 2rem;
     text-decoration: underline;
     color: #fff;
+}
+
+.footer-wrapper {
+    position: absolute;
 }
