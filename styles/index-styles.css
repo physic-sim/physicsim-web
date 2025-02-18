@@ -4,9 +4,13 @@ body, html {
     font-style: normal;
 }
 
+.nav-wrapper {
+    position: relative;
+}
+
 .landing-wrapper {
     width: 100vw;
-    height: 75vh;
+    height: 50vh;
     background-color: var(--alt-purple);
     display: flex;
     flex-direction: column;
@@ -27,19 +31,42 @@ body, html {
     font-size: 1.5rem;
 }
 
+.nav-btn {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: medium;
+    color: #fff;
+    border: 2px solid var(--alt-green);
+    padding: .5em;
+    border-radius: 1em;
+    transition: background-color 250ms;
+    filter: drop-shadow(0px 0px 5px #00000088);
+}
+
+.nav-btn:hover {
+    background-color: var(--alt-red);
+}
+
 .catalog-wrapper {
     width: 100vw;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: .5em;
 }
 
 .catalog-container {
-    transform: translateY(-100px);
     display: grid;
     width: 75vw;
     grid-template-columns: repeat(3, 1fr);
     gap: 1em;
     padding: 1em;
+}
+
+.catalog-heading {
+    font-size: xx-large;
 }
 
 .catalog-item {

@@ -9,8 +9,8 @@
     />  
     <link rel="stylesheet" href="https://fontlibrary.org/en/face/cmu-serif"/>
     <link rel="stylesheet" href="https://use.typekit.net/fxw2jrd.css">
-    <link rel="stylesheet" href="https://www.physicsim.co.uk/styles/styles.css">
-    <link rel="stylesheet" href="https://www.physicsim.co.uk/styles/index-styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <link rel="stylesheet" href="/styles/index-styles.css">
     <link rel="canonical" href="https://physicsim.co.uk/">
     <link rel="apple-touch-icon" sizes="57x57" href="assets/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="assets/apple-icon-60x60.png">
@@ -40,8 +40,14 @@
     <div class="landing-wrapper">
         <h1 class="landing-title">Physicsim</h1>
         <h2 class="landing-caption">3D Physics Simulations Of A-Level Physics Concepts</h2>
+        <div class="nav-btns">
+            <button class="nav-btn" onclick="document.getElementById('mechanics').scrollIntoView({ behavior: 'smooth' });">Mechanics</button>
+            <button class="nav-btn" onclick="document.getElementById('waves').scrollIntoView({ behavior: 'smooth' });">Waves</button>
+            <button class="nav-btn" onclick="document.getElementById('particles').scrollIntoView({ behavior: 'smooth' });">Particle</button>
+        </div>
     </div>
     <div class="catalog-wrapper">
+        <h1 class="catalog-heading" id="mechanics">Mechanics</h1>
         <div class="catalog-container">
             <div class="catalog-item">
                 <h2 class="catalog-title">
@@ -51,7 +57,7 @@
                 <p class="catalog-caption">
                     Discover the Principle of Conservation of Momentum in a 3D environment allowing control of position, mass and velocity. 
                 </p>
-                <a class="catalog-btn" href="https://sim.physicsim.co.uk/collisions">Run</a>
+                <a class="catalog-btn" href="https://sim.physicsim.co.uk/3/collisions">Run</a>
             </div>
             <div class="catalog-item">
                 <h2 class="catalog-title">
@@ -61,7 +67,7 @@
                 <p class="catalog-caption">
                     Experiment with circular motion and see how it links with simple harmonic motion equations.
                 </p>
-                <a class="catalog-btn" href="https://sim.physicsim.co.uk/circular-motion">Run</a>
+                <a class="catalog-btn" href="https://sim.physicsim.co.uk/3/circular-motion">Run</a>
             </div>
             <div class="catalog-item">
                 <h2 class="catalog-title">
@@ -71,8 +77,11 @@
                 <p class="catalog-caption">
                     View how acceleration due to gravity applies and see how it impacts movement in different directions.
                 </p>
-                <a class="catalog-btn" href="https://sim.physicsim.co.uk/projectile-motion">Run</a>
+                <a class="catalog-btn" href="https://sim.physicsim.co.uk/3/projectile-motion">Run</a>
             </div>
+        </div>
+        <h1 class="catalog-heading" id="waves">Waves & Light</h1>
+        <div class="catalog-container">
             <div class="catalog-item">
                 <h2 class="catalog-title">
                     Snell's Law
@@ -81,8 +90,11 @@
                 <p class="catalog-caption">
                     See how Snell's Law of Refraction works in 3D and how light refracts at different refractive indexes.
                 </p>
-                <a class="catalog-btn" href="https://sim.physicsim.co.uk/snells-law">Run</a>
+                <a class="catalog-btn" href="https://sim.physicsim.co.uk/3/snells-law">Run</a>
             </div>
+        </div>
+        <h1 class="catalog-heading" id="particles">Particle Physics</h1>
+        <div class="catalog-container">
             <div class="catalog-item">
                 <h2 class="catalog-title">
                     Cyclotron
@@ -91,7 +103,7 @@
                 <p class="catalog-caption">
                     Observe a Cyclotron slowed down and experiment with getting high accelerations. This simulation does not account for relativistic effects. 
                 </p>
-                <a class="catalog-btn" href="https://sim.physicsim.co.uk/cyclotron">Run</a>
+                <a class="catalog-btn" href="https://sim.physicsim.co.uk/3/cyclotron">Run</a>
             </div>
             <div class="catalog-item">
                 <h2 class="catalog-title">
@@ -101,7 +113,17 @@
                 <p class="catalog-caption">
                     View Rutherford's famous alpha particle scattering experiment in 3D. Observe how increased velocity and/or increasing the charge changes deflection.
                 </p>
-                <a class="catalog-btn" href="https://sim.physicsim.co.uk/alpha-scattering">Run</a>
+                <a class="catalog-btn" href="https://sim.physicsim.co.uk/3/alpha-scattering">Run</a>
+            </div>
+            <div class="catalog-item">
+                <h2 class="catalog-title">
+                    Nuclear Decay
+                </h2>
+                <img class="catalog-img" alt="nuclear decay graph simulation" src="assets/nuclear-decay-screenshot.png">
+                <p class="catalog-caption">
+                    Observe how our exponential model of nuclear decay gets increasingly more suitable as the number of nuclei that we analyse increases.
+                </p>
+                <a class="catalog-btn" href="https://sim.physicsim.co.uk/2/nuclear-decay">Run</a>
             </div>
         </div>
     </div>
@@ -109,7 +131,7 @@
     <footer class="footer-wrapper">
         <div class="footer-container">
             <p class="footer-txt--emphasis">
-                Copyright &copy 2024 Isaac Barker.
+                Copyright &copy 2025 Isaac Barker.
             </p>
             <p class="footer-txt--light">
                 This site is developed as a side project by <a class="footer-link" href="https://www.isaacbarker.net">@isaacbarker</a>.<br>
